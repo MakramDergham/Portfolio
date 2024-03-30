@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="/assets/icon.jpg" type="image/x-icon"/>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="assets/name_logo.png" alt="MakramDergham logo" id="logo">
+            <ul>
+                <li><a href="#" style="color:#009BDF">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="seperate"></div>
+    <main>
+    <div class="circle"></div>
+    <div class="hero_section">
+      <div>
+        <p id="name_intro">HELLO, MY NAME IS</p>
+        <div class="break"></div>
+        <h1 class="main_name">Makram Dergham</h1>
+        <h2 id="secondary">Web Developer</h2>
+        <a href="contact.html"><button id="contact_button">Contact</button></a>
+      </div>
+    <img src="assets/personal_image.jpg" alt="Makram Dergham" class="round_image">
+    </div>
+    <a href="mailto:derghammakram@gmail.com"><img src="assets/email_logo.png" alt="email"class="email"> </a>
+    <section>
+      <div id="about_me">
+        <h4>About Me</h4>
+        <p data-aos="fade-right" class="large_text">I am 16-year-old high school student dedicated to the realm of development, channeling my enthusiasm into the dynamic spheres of entrepreneurship and community service.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skills_container">
+        <div class="skill">
+          <div class="icon_text">
+            <img src="assets/web-development.png" alt="Web Development Icon" class="icon">
+            <h3>WEB DEVELOPMENT</h3>
+          </div>
+          <p>New to web development, learning HTML, CSS, and JavaScript. Passionate about responsive design and backend development, committed to continuous learning for dynamic web applications.</p>
+        </div>
+        <div class="skill">
+          <div class="icon_text">
+            <img src="assets/robotics.png" alt="Robotics icon" class="icon">
+            <h3>ROBOTICS</h3>
+          </div>
+          <p>I've created a number of Arduino projects, such as sensor-based automation and LED displays. I learned to code, integrate components, and investigate the dynamic relationship between hardware and software.</p>
+        </div>
+        <div class="skill">
+          <div class="icon_text">
+            <img src="assets/leadership.png" alt="Leadership icon" class="icon">
+            <h3>LEADERSHIP</h3>
+          </div>
+          <p>Gained expertise leading teams and projects through extracurricular activities and school projects. I arrange activities, promote cooperation, and strengthen teamwork abilities among members</p>
+        </div>
+      </div>
+    </section>
+    <section id="percentage_container">
+      <div>
+        <h3>HTML</h3>
+        <div class="percentage_bar">
+          <div class="percentage"><p class="percentage_text">70%</p></div>
+        </div>
+        <h3>CSS</h3>
+        <div class="percentage_bar">
+          <div class="percentage"><p class="percentage_text">67%</p></div>
+        </div>
+        <h3>JavaScript</h3>
+        <div class="percentage_bar">
+          <div class="percentage"><p class="percentage_text">25%</p></div>
+        </div>
+        <h3>Python</h3>
+        <div class="percentage_bar">
+          <div class="percentage"><p class="percentage_text">55%</p></div>
+        </div>
+      </div>
+      <p style="font-size: 25px; margin-left: 100px;">I've been actively improving my programming skills through hands-on experience and embracing new technologies. This ongoing journey has enhanced my coding, problem-solving, and software development abilities. I'm excited about the progress I've made and eager to take on new challenges to continue growing.</p>
+    </section>
+    <section id="awards">
+       <h2>Awards and Achievements</h2>
+       <div id="awards_container">
+        <img src="assets/Injaz-Lebanon.png" alt="Injaz Lebanon" class="aside_award">
+        <img src="assets/INJAZ-Al-Arab.png" alt="Injaz Al Arab" class="center_award">
+        <img src="assets/codebrave-logo.png" alt="Codebrave" class="center_award">
+        <img src="assets/pmief.png" alt="PMIEF" class="aside_award">
+        <h3>Best Youth Company in Lebanon for The Year 2023</h3>
+        <h3>Best Product in The Arab Region for The Year 2023</h3>
+        <h3>Codebrave Scholar</h3>
+        <h3>Project Excellence Award</h3>
+       </div>
+    </section>
+    <section id="vid_section">
+      <h2>Featured Project</h2>
+      <div id="vid_container">
+        <a href="https://guidetoitaly.netlify.app">
+        <video autoplay muted loop id="guide_vid">
+          <source src="assets/Guide-to-italy.mp4" type="video/mp4" >
+          Your browser does not support the video tag.
+        </video> 
+        </a>
+        <div id="italy_title">
+          <h3>Guide To Italy</h3>
+          <p>Creating a guide to Italy was a crucial part of CodeBrave's learning process in HTML, CSS, and JavaScript. Through this project, I applied my skills to structure content, style layouts, and add interactive features, reinforcing my understanding of front-end web development while producing a useful resource for exploring Italy.</p>
+          <a href="projects.html"><button>See More </button></a>
+        </div> 
+      </div>    
+    </section>
+  </main>
+    <footer>
+      <div id="footer_text">
+      <p>© 2024 Makram Dergham. All rights reserved.</p>
+    </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
