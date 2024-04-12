@@ -8,20 +8,30 @@
         <link rel="icon" href="/assets/icon.jpg" type="image/x-icon"/>
       </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="assets/name_logo.png" alt="MakramDergham logo" id="logo">
-            <ul>
-                <li><a href="index.html" >HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="#" style="color:#009BDF">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+        <img src="assets/name_logo.png" alt="MakramDergham logo" id="logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#" style="color:#009BDF">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div id="burger" onclick="showSidebar()"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+    </nav>
+    <div class="sidebar">
+      <ul>
+        <li onclick="closeSidebar()" style="background-color: rgba(128, 128, 128, 0.442);">Close</li>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="about.html" >ABOUT</a></li>
+        <li><a href="#" style="color:#009BDF">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+</header>
     <div class="seperate"></div>
     <a href="mailto:derghammakram@gmail.com"><img src="assets/email_logo.png" alt="email"class="email"> </a>
-        <div class="circle"></div>
+        <!-- <div class="circle"></div> -->
         <div class="hero_section">
           <div style="margin-top: 200px; margin-left: 100px;">
             <h1 class="main_name">Projects</h1>

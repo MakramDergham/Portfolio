@@ -28,3 +28,10 @@ const observer = new IntersectionObserver(entries => {
       navbar.classList.remove('scrolled');
     }
   });
+
+function showSidebar(){
+  document.querySelector(".sidebar").style.display = "block"
+}
+function closeSidebar(){
+  document.querySelector(".sidebar").style.display = "none"
+}

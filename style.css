@@ -5,6 +5,9 @@ main{
     margin-left: 70px;
     margin-right: 70px;
 }
+html{
+    width:100%
+}
 
 body{
     overflow-x: hidden;
@@ -63,12 +66,12 @@ nav a{
 .round_image{
     border-radius: 50%;
     height:600px;
-    margin-left: 200px;
     margin-top: 50px;
 }
 .hero_section{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .hero_description{
     font-size: 30px;
@@ -153,6 +156,36 @@ nav ul li:hover::before {
 nav ul li:hover a{
     color:#009BDF
 }
+#burger{
+    width: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display:none;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+}
+.sidebar{
+    display: none;
+    width:200px;
+    height:100%;
+    position:absolute;
+    right:0;
+    z-index:6;
+    background-color: white;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #333;
+}
+.sidebar ul li{
+    margin:10px;
+    margin-left: 0;
+}
 #about_me{
     display: flex;
     flex-direction: column;
@@ -176,6 +209,8 @@ h4{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em
 }
 .skill{
     height:350px;
@@ -239,13 +274,18 @@ h4{
 }
 #percentage_container{
     display: flex;
-    margin-left: 80px;
+    justify-content: space-around;
+    gap:3em;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-top: 50px;
     align-items: center;
 }
 #percentage_container h3{
     font-weight: 300;
+}
+.programming_skills{
+    font-size: 25px;
 }
 footer{
     width:100%;
@@ -281,9 +321,17 @@ footer p{
     text-align: center;
 }
 #awards_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column-award{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:23%;
+    flex-basis: 300px;
 }
 .center_award{
     height:130px;
@@ -310,7 +358,7 @@ footer p{
     margin-top: 70px;
 }
 #guide_vid{
-    width:600px;
+    width:100%;
     margin-bottom: 0;
 
 }
@@ -323,15 +371,15 @@ footer p{
 }
 #vid_container{
     display: flex;
+    justify-content: space-between;
+    gap:2em
 }
 #italy_title h3{
     margin-top: 0;
     color: rgb(0, 0, 0);
     font-size: 35px;
-    margin-left: 100px;
 }
 #italy_title p{
-    margin-left: 100px;
     font-size: 23px;
 }
 #italy_title button{
@@ -341,7 +389,6 @@ footer p{
     border-radius: 15px;
     font-size: 20px;
     padding: 13px 20px;
-    margin-left: 100px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -672,4 +719,33 @@ input:nth-of-type(5):checked ~ div.carousel {
 }
 .project_cell hr{
     width:400px
+}
+
+/* Mobile*/
+@media screen and (max-width:480px){
+    
+}
+
+@media screen and (max-width:768px){
+    .large_text{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+    }
+    #burger{
+        display: inline;
+    }
+}
+
+@media screen and (max-width:1024px){
+}
+@media screen and (max-width:1200px){
+    .round_image{
+        display: none;
+    }
+    #vid_container{
+        flex-direction: column;
+        align-items: start;
+    }
 }
